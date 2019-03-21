@@ -21,11 +21,23 @@ export default class MenuItems extends React.Component {
 
     render() {
         const displayDefaultData = this.state.data.map(item => {
-            return <TabCard item={item} handleFilter={this.handleFilter} />;
+            return (
+                <TabCard
+                    key={item.name + Math.random() * 1}
+                    item={item}
+                    handleFilter={this.handleFilter}
+                />
+            );
         });
 
         const displayFilteredData = this.state.filteredData.map(item => {
-            return <TabCard item={item} handleFilter={this.handleFilter} />;
+            return (
+                <TabCard
+                    key={item.name + Math.random() * 1}
+                    item={item}
+                    handleFilter={this.handleFilter}
+                />
+            );
         });
         return (
             <>
