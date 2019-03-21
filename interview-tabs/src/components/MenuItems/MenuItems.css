@@ -1,0 +1,17 @@
+
+.container {
+    width: 98%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.button {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+
+.button > button {
+    width: 6rem;
+}
