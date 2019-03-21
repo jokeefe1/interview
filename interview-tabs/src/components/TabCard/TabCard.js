@@ -1,7 +1,6 @@
 import React from 'react';
 
 export default function TabCard(props) {
-    console.log(props)
     return (
         <div className='tab-card'>
             <div>
